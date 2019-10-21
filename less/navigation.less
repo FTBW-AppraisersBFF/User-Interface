@@ -1,0 +1,56 @@
+// Navigation code here
+
+.nav-container {
+    // .bkbl();
+    .flex (row-reverse, space-evenly, center);
+    background-color: @off-white;
+    bottom-border: 30px solid @bright-white;
+    @media @mobile {
+        .flex (column, speace-evenly, center);
+    }
+
+    #logo {
+        // .bkrd();
+        color: @zwillo-blue;
+        font-size: 4rem;
+        margin: 1.5%;
+        @media @mobile {
+            .mft();
+        };
+    }
+
+    .navbar {
+        // .bkgrn();
+        width: 50%;
+        margin: 0%;
+        .flex(row, space-evenly, center);
+        @media @mobile {
+            .flex(column, space-evenly, center);
+            width: 100vw;
+        }
+
+        a {
+            font-family: @nav-font-family;
+            margin: 0% 2%;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: @plain-gray;
+            white-space: nowrap;
+            @media @mobile {
+                .mf();
+                // .bkbl();
+                width: 100vw;
+                white-space: nowrap;
+                padding: 3%;
+                border-bottom: 0.5px solid lightgrey;
+                .flex(column, center, center)
+            }
+        }
+
+        #s1 {
+            @media @mobile {
+                border-top: 1px solid lightgrey;
+            };
+        }
+    }
+}
