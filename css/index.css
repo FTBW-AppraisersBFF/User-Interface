@@ -1,3 +1,7 @@
+.f4 {
+  font-size: 1.2rem;
+  padding: 0.5% auto;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,10 +164,17 @@ h5 {
     justify-content: speace-evenly;
     align-items: center;
   }
+  .nav-container:hover .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: speace-evenly;
+    align-items: center;
+  }
 }
 .nav-container #logo {
-  color: #0893ea;
   font-size: 4rem;
+  padding: 0.5% auto;
+  color: #0893ea;
   margin: 1.5%;
 }
 @media (max-width: 500px) {
@@ -182,24 +193,28 @@ h5 {
 }
 @media (max-width: 500px) {
   .nav-container .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
+    display: none;
+    z-index: 1;
   }
 }
 .nav-container .navbar a {
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  padding: 0.5% auto;
   margin: 0% 2%;
   text-decoration: none;
-  font-size: 1.6rem;
   color: #636363;
   white-space: nowrap;
 }
+@media (max-width: 800px) {
+  .nav-container .navbar a {
+    font-size: 1.2rem;
+    padding: 0.5% auto;
+  }
+}
 @media (max-width: 500px) {
   .nav-container .navbar a {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 0.5% auto;
     width: 100vw;
     white-space: nowrap;
@@ -210,6 +225,9 @@ h5 {
     justify-content: center;
     align-items: center;
   }
+  .nav-container .navbar a:hover {
+    color: #636363;
+  }
 }
 @media (max-width: 500px) {
   .nav-container .navbar #s1 {
@@ -219,18 +237,32 @@ h5 {
 .body-container-1 {
   width: 80%;
 }
-h3 {
+.body-container-1 h2 {
   font-size: 4rem;
+  padding: 0.5% auto;
   padding: 0%;
   margin: 15% 10% 5% 10%;
 }
-p {
+@media (max-width: 500px) {
+  .body-container-1 h2 {
+    font-size: 2rem;
+    padding: 0.5% auto;
+  }
+}
+.body-container-1 h3 {
   font-size: 2rem;
+  padding: 0.5% auto;
   color: #ffffff;
   padding: 0%;
   margin: 5% 10% 5% 10%;
 }
-.btn {
+@media (max-width: 500px) {
+  .body-container-1 h3 {
+    font-size: 1.2rem;
+    padding: 0.5% auto;
+  }
+}
+.body-container-1 .btn {
   color: #ffffff;
   background-color: #0893ea;
   font-size: 1.8rem;
@@ -242,7 +274,13 @@ p {
   min-height: 20px;
   white-space: nowrap;
 }
-.btn:hover {
+.body-container-1 .btn .btn:hover {
   background-color: rgba(255, 255, 255, 0.886);
   color: #0893ea;
+}
+@media (max-width: 500px) {
+  .body-container-1 .btn {
+    font-size: 1rem;
+    padding: 0.5% auto;
+  }
 }
