@@ -21,15 +21,20 @@
     }
     
     .btn {
+        .flex(row, center, center);
         .btn(@bright-white, @zwillo-blue);
         white-space:nowrap;
         .btn:hover {
             background-color: @off-white;
             color: @zwillo-blue;
         }
+        max-height: 50px;
+        min-width: 100px;
+
         @media @mobile {
             .f5();
         }
+        
     }
     
     

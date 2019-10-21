@@ -267,16 +267,20 @@ h5 {
   }
 }
 .body-container-1 .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
   background-color: #0893ea;
   font-size: 1.8rem;
-  border-radius: 10px;
-  padding: 5%;
-  margin: 10%;
+  border-radius: 7px;
+  padding: 5% ;
+  margin: 10% ;
   width: 30%;
-  min-width: 90px;
-  min-height: 20px;
   white-space: nowrap;
+  max-height: 50px;
+  min-width: 100px;
 }
 .body-container-1 .btn .btn:hover {
   background-color: rgba(255, 255, 255, 0.886);
