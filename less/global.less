@@ -9,8 +9,7 @@ html {
 
 html, body {
   font-family: @body-second;
-  background-image: url("/img/beach-house.jpeg");
-  // background-color: #cccccc;
+  // background-image: url("/img/1.jpeg");
 }
 
 h1, h2, h3, h4, h5 {
@@ -18,15 +17,39 @@ h1, h2, h3, h4, h5 {
   color: @bright-white;
 }
 
-h2 {
+// ------ //
 
+h2 {
+  .f1();
+  padding: 0%;
+  margin: 15% 10% 5% 10%;
+  @media @mobile {
+      .f2();
+  }
 }
 
 h3 {
-  
+  .f2();
+  color: @bright-white;
+  padding: 0%;
+  margin: 5% 10% 5% 10%;
+  @media @mobile {
+      .f4();
+  }
 }
 
+.body {
+  height: 90vh;
+}
+// --- BACKGROUND IMAGES --- //
 
+.home {
+  background-image: url("/img/1.jpeg");
+}
+
+.about {
+  background-image: url("/img/2.jpeg");
+}
 
 
 

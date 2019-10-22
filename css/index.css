@@ -1,3 +1,18 @@
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
 .f4 {
   font-size: 1.2rem;
   padding: 0.5% auto;
@@ -139,7 +154,6 @@ html {
 html,
 body {
   font-family: 'Sumana', serif;
-  background-image: url("/img/beach-house.jpeg");
 }
 h1,
 h2,
@@ -148,6 +162,40 @@ h4,
 h5 {
   font-family: 'Playfair Display', serif;
   color: #ffffff;
+}
+h2 {
+  font-size: 4rem;
+  padding: 0.5% auto;
+  padding: 0%;
+  margin: 15% 10% 5% 10%;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2rem;
+    padding: 0.5% auto;
+  }
+}
+h3 {
+  font-size: 2rem;
+  padding: 0.5% auto;
+  color: #ffffff;
+  padding: 0%;
+  margin: 5% 10% 5% 10%;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 1.2rem;
+    padding: 0.5% auto;
+  }
+}
+.body {
+  height: 90vh;
+}
+.home {
+  background-image: url("/img/1.jpeg");
+}
+.about {
+  background-image: url("/img/2.jpeg");
 }
 .nav-container {
   display: flex;
@@ -241,53 +289,29 @@ h5 {
 .body-container-1 {
   width: 80%;
 }
-.body-container-1 h2 {
-  font-size: 4rem;
-  padding: 0.5% auto;
-  padding: 0%;
-  margin: 15% 10% 5% 10%;
-}
-@media (max-width: 500px) {
-  .body-container-1 h2 {
-    font-size: 2rem;
-    padding: 0.5% auto;
-  }
-}
-.body-container-1 h3 {
-  font-size: 2rem;
-  padding: 0.5% auto;
-  color: #ffffff;
-  padding: 0%;
-  margin: 5% 10% 5% 10%;
-}
-@media (max-width: 500px) {
-  .body-container-1 h3 {
-    font-size: 1.2rem;
-    padding: 0.5% auto;
-  }
-}
-.body-container-1 .btn {
+.body-container-1 #btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   color: #ffffff;
   background-color: #0893ea;
+  text-decoration: none;
   font-size: 1.8rem;
   border-radius: 7px;
-  padding: 5% ;
+  padding: 2.5% 10%;
   margin: 10% ;
   width: 30%;
   white-space: nowrap;
   max-height: 50px;
   min-width: 100px;
 }
-.body-container-1 .btn .btn:hover {
+.body-container-1 #btn .btn:hover {
   background-color: rgba(255, 255, 255, 0.886);
   color: #0893ea;
 }
 @media (max-width: 500px) {
-  .body-container-1 .btn {
+  .body-container-1 #btn {
     font-size: 1rem;
     padding: 0.5% auto;
   }
