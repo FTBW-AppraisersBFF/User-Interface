@@ -189,7 +189,7 @@ h3 {
   }
 }
 .body {
-  height: 90vh;
+  height: 100vh;
 }
 .home {
   background-image: url("/img/1.jpeg");
@@ -337,4 +337,10 @@ footer {
 input {
   padding: 5% 15%;
   margin: 2% 10%;
+}
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
