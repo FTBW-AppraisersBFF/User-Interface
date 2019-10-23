@@ -1,0 +1,72 @@
+// --- MIXINS --- //
+
+
+// Building Colors:
+.bkbl() {
+    background-color: blue;
+}
+.bkgrn() {
+    background-color: green;
+}
+.bkrd() {
+    background-color: red;
+}
+.bkyllw() {
+    background-color: yellow;
+}
+
+
+//Flexbox:
+.flex(@flex-direction, @justify-content, @align-items){
+    display: flex;
+    flex-direction: @flex-direction;
+    justify-content: @justify-content;
+    align-items: @align-items;
+}
+
+
+//Buttons:
+    .btn(@bright-white, @zwillo-blue){
+        color: @bright-white;
+        background-color: @zwillo-blue;
+        text-decoration: none;
+        font-size: 1.8rem;
+        border-radius: 7px;
+        padding: 2.5% 10%;
+        margin: 10% ;
+        width: 30%;
+        max-height: 50px;
+        min-width: 100px;
+    }
+
+
+// Mobile Queries
+
+//
+    
+    // Title Text
+    .f1() {
+        font-size: 4rem;
+    	padding: .5% auto;
+    }
+
+    .f2() {
+        font-size: 2rem;
+    	padding: .5% auto;
+    }
+
+    .f3() {
+    	font-size: 1.6rem;
+    	padding: .5% auto;
+    }
+
+    .f4 {
+        font-size: 1.2rem;
+    	padding: .5% auto;
+    }
+
+    .f5() {
+        font-size: 1rem;
+    	padding: .5% auto;
+    }
+

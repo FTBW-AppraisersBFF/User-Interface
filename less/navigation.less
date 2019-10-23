@@ -1,0 +1,118 @@
+// Navigation code here
+
+.nav-container {
+    // .bkyllw();
+    .flex (row-reverse, space-evenly, center);
+    background-color: @off-white;
+    bottom-border: 30px solid @bright-white;
+    @media @mobile {
+        // .bkrd();
+        .flex (column, speace-evenly, center);
+
+        &:hover .navbar {
+            .flex (column, speace-evenly, center); 
+        }
+    }
+
+    #logo-desktop {
+        // .bkrd();
+        .f1();
+        color: @zwillo-blue;
+        margin: 1.5%;
+        @media @mobile {
+            .f2();
+            display: none;
+        };
+    }
+
+    .burger-container-container {
+        // .bkbl();
+        .flex(row, flex-start, flex-end);
+        .burger-container {
+            // .bkyllw();
+            @media @mobile {
+                margin: 2%;
+                width: 4vw;
+            }
+            .burger {
+                @media @mobile {
+                    width: 20px;
+                    height: 2px;
+                    background-color: @zwillo-blue;
+                    margin: 3px 0;
+                }
+            }
+        }
+    }
+
+    #logo-mobile {
+        @media @desktop {
+            display: none;
+        }
+        @media @tablet {
+            display: none;
+        }
+        @media @mobile {
+            .f2();
+            // .bkyllw();
+            width: 93vw;
+            color: @zwillo-blue;
+            margin: 1.5% 10% 1.5% 1.5%;
+            .flex (column, speace-evenly, center); 
+        };
+    }
+
+    #logo-mobile-container {
+        .flex (column, speace-evenly, center); 
+    }
+
+    .navbar {
+        // .bkgrn();
+        width: 50%;
+        margin: 0%;
+        .flex(row, space-evenly, center);
+        @media @mobile {
+            // .flex(column, space-evenly, center);
+            display: none;
+            z-index: 1;
+        }
+        
+        
+
+        a {
+            font-family: @nav-font-family;
+            .f3();
+            margin: 0% 2%;
+            text-decoration: none;
+            color: @plain-gray;
+            white-space: nowrap;
+            @media @tablet {
+                .f4();
+            }
+            @media @mobile {
+                .f5();
+                // .bkbl();
+                width: 100vw;
+                white-space: nowrap;
+                padding: 3%;
+                border-bottom: 0.5px solid lightgrey;
+                .flex(column, center, center);
+
+                &:hover {
+                    .flex(column, center, center);
+                    color: @zwillo-blue;
+                }
+            }
+        }
+
+        // --- MOBILE VIEW --- //
+        #s1 {
+            @media @mobile {
+                border-top: 1px solid lightgrey;
+            };
+        }
+
+    }
+}
+
+

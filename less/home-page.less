@@ -1,0 +1,69 @@
+.body-container-1{
+    width: 80%;
+    
+    #btn {
+        .flex(row, center, center);
+        .btn(@bright-white, @zwillo-blue);
+        white-space:nowrap;
+        &:hover {
+            background-color: @off-white;
+            color: @zwillo-blue;
+        }
+        max-height: 50px;
+        min-width: 100px;
+
+        @media @mobile {
+            .f5();
+        }
+        
+    }
+    
+    
+}
+
+// --- Contact --- //
+input {
+    padding: 5% 15%;
+    margin: 2% 10%;
+}
+
+.two {
+    padding: 2% 25%;
+    margin: 2% 10%;
+}
+
+input[type="text"]#subdomaintwo{
+    -webkit-appearance: none!important;
+    color: red;
+    text-align: right;
+    width: 75px;
+    border: 1px solid gray;
+    border-left: 0px;
+    margin: 0 0 0 -7px;
+    background: white;
+}
+input[type="text"]#subdomain{
+    -webkit-appearance: none!important;
+    border: 1px solid gray;
+    border-right: 0px;
+    outline: none;
+}
+
+// --- About Page --- //
+
+.carousel {
+    .flex(column, center, center);
+    // display: flex;
+    // flex: wrap;
+}
+
+// h4 {
+//     color: @zwillo-blue;
+//     font-size: .f2();
+//     .bkbl();
+//     .flex(column, center, center);
+// }
+
+// img {
+//     display: none;
+// }
