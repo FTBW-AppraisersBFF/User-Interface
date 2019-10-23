@@ -229,6 +229,7 @@ h3 {
   }
 }
 .nav-container #logo {
+  background-color: red;
   font-size: 4rem;
   padding: 0.5% auto;
   color: #0893ea;
@@ -241,6 +242,7 @@ h3 {
   }
 }
 .nav-container .navbar {
+  background-color: green;
   width: 50%;
   margin: 0%;
   display: flex;
@@ -293,6 +295,29 @@ h3 {
 @media (max-width: 500px) {
   .nav-container .navbar #s1 {
     border-top: 1px solid lightgrey;
+  }
+}
+.burger-container-container {
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.burger-container-container .burger-container {
+  background-color: yellow;
+}
+@media (max-width: 500px) {
+  .burger-container-container .burger-container {
+    margin: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .burger-container-container .burger-container .burger {
+    width: 20px;
+    height: 2px;
+    background-color: #0893ea;
+    margin: 3px 0;
   }
 }
 footer {

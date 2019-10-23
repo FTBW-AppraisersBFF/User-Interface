@@ -13,8 +13,9 @@
         }
     }
 
+
     #logo {
-        // .bkrd();
+        .bkrd();
         .f1();
         color: @zwillo-blue;
         margin: 1.5%;
@@ -24,7 +25,7 @@
     }
 
     .navbar {
-        // .bkgrn();
+        .bkgrn();
         width: 50%;
         margin: 0%;
         .flex(row, space-evenly, center);
@@ -62,12 +63,31 @@
             }
         }
 
+        // --- MOBILE VIEW --- //
         #s1 {
             @media @mobile {
                 border-top: 1px solid lightgrey;
             };
         }
+
     }
 }
 
-
+.burger-container-container {
+    .bkbl();
+    .flex(row, flex-start, flex-end);
+    .burger-container {
+        .bkyllw();
+        @media @mobile {
+            margin: 2%;
+        }
+        .burger {
+            @media @mobile {
+                width: 20px;
+                height: 2px;
+                background-color: @zwillo-blue;
+                margin: 3px 0;
+            }
+        }
+    }
+}
