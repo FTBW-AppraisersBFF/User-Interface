@@ -1,11 +1,12 @@
 // Navigation code here
 
 .nav-container {
-    // .bkbl();
+    // .bkyllw();
     .flex (row-reverse, space-evenly, center);
     background-color: @off-white;
     bottom-border: 30px solid @bright-white;
     @media @mobile {
+        // .bkrd();
         .flex (column, speace-evenly, center);
 
         &:hover .navbar {
@@ -13,19 +14,60 @@
         }
     }
 
-
-    #logo {
-        .bkrd();
+    #logo-desktop {
+        // .bkrd();
         .f1();
         color: @zwillo-blue;
         margin: 1.5%;
         @media @mobile {
             .f2();
+            display: none;
         };
     }
 
+    .burger-container-container {
+        // .bkbl();
+        .flex(row, flex-start, flex-end);
+        .burger-container {
+            // .bkyllw();
+            @media @mobile {
+                margin: 2%;
+                width: 4vw;
+            }
+            .burger {
+                @media @mobile {
+                    width: 20px;
+                    height: 2px;
+                    background-color: @zwillo-blue;
+                    margin: 3px 0;
+                }
+            }
+        }
+    }
+
+    #logo-mobile {
+        @media @desktop {
+            display: none;
+        }
+        @media @tablet {
+            display: none;
+        }
+        @media @mobile {
+            .f2();
+            // .bkyllw();
+            width: 93vw;
+            color: @zwillo-blue;
+            margin: 1.5% 10% 1.5% 1.5%;
+            .flex (column, speace-evenly, center); 
+        };
+    }
+
+    #logo-mobile-container {
+        .flex (column, speace-evenly, center); 
+    }
+
     .navbar {
-        .bkgrn();
+        // .bkgrn();
         width: 50%;
         margin: 0%;
         .flex(row, space-evenly, center);
@@ -73,21 +115,4 @@
     }
 }
 
-.burger-container-container {
-    .bkbl();
-    .flex(row, flex-start, flex-end);
-    .burger-container {
-        .bkyllw();
-        @media @mobile {
-            margin: 2%;
-        }
-        .burger {
-            @media @mobile {
-                width: 20px;
-                height: 2px;
-                background-color: @zwillo-blue;
-                margin: 3px 0;
-            }
-        }
-    }
-}
+
